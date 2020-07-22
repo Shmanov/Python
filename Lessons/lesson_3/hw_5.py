@@ -12,13 +12,13 @@ stop = True
 
 while stop:
    
-    string_digits = input("Введите строку чисел, разделенных пробелом. Для выхода нажмите 'q': ")
+    string_digits = input("Введите строку чисел, разделенных пробелом. Для выхода введите 'q': ")
     string_digits.islower()
     
     if string_digits.find("q") != -1:
         string_digits = string_digits[:string_digits.find("q") - 1]
         stop = False
-    string_digits = string_digits.split(',')
+    string_digits = string_digits.split(' ')
     
     list_digits = list()
     for s in string_digits:

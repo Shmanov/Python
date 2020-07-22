@@ -4,20 +4,19 @@
 
 def my_func(x, y):
     
-    i = 1
-    while i < abs(y):
-        x *= x
-        i += 1
-        
-    if y < 0:
-        return(1 / x)
-    if y > 0:
-        return(x)
+    if  y < 0:
+        i = 1
+        result = 1 / x
+        while i < abs(y):
+            result *= 1 / x
+            i += 1
+        return(result)
+   
     if  y == 0:
         return(1)
     
         
 
-result = my_func(float(input("Введите действительное число x: ")), int(input("Введите целое число y: ")))   
+result = my_func(float(input("Введите действительное положительное число x: ")), int(input("Введите целое отрицательное число y: ")))   
 
 print(f"Число x в степени y: {result}")
