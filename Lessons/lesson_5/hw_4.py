@@ -8,17 +8,18 @@
 
 
 en_rus_dict = {"One": "Один", "Two": "Два", "Three": "Три", "Four": "Четыре" }
-
+new_text = ""
 try:
-    with open("textfile4.txt", 'r') as f_obj:
+    with open("textfile4.txt", 'r+') as f_obj:
                 
-        text = f_obj.read()
+        text = f_obj.readlines()
         print(text)
-        #print("Сотрудники с окладом меньше 20000:" + '\n')
+        
         for i in text:
            word = i.split(' ')
-           #print(en_rus_dict[word[0]])
-           print(word)
+           new_text += (en_rus_dict[word[0]] + " " + word[1] + " " + word[2])
+    with open("new_textfile4.txt", 'w') as f_obj:
+        f_obj.write(new_text)
         
         
 except IOError:
