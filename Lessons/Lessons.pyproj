@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>8b2d2d27-42cc-4c5a-b4ee-3750e1b153d2</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>lesson_7\hw_1.py</StartupFile>
+    <StartupFile>lesson_8\hw_4.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -128,6 +128,18 @@
     <Compile Include="lesson_7\hw_1.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="lesson_8\hw_1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lesson_8\hw_2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lesson_8\hw_3.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lesson_8\hw_4.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="lesson_1\" />
@@ -137,6 +149,7 @@
     <Folder Include="lesson_5\" />
     <Folder Include="lesson_6\" />
     <Folder Include="lesson_7\" />
+    <Folder Include="lesson_8\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
